@@ -1,0 +1,8 @@
+node_modules
+build
+.env
+request.rest
+.vscode
+requests.rest
+*.zip
+*.db
