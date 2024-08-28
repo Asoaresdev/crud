@@ -1,6 +1,6 @@
-# Api crud
+# Api-crud
 
-CRUD API 
+CRUD para desafio da Generation
 
 ## Deploy no render: 
 https://crud-n3i4.onrender.com/users
