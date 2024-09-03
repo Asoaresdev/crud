@@ -77,23 +77,23 @@ app.post("/users", async (req: Request, res: Response) => {
         }
         if (typeof age !== "string") {
             res.statusCode = 400
-            throw new Error("Email precisa ser uma string")
+            throw new Error("Idade precisa ser uma string")
         }
         if (typeof firstSemesterGrade !== "string") {
             res.statusCode = 400
-            throw new Error("Password precisa ser uma string")
+            throw new Error(" Nota precisa ser uma string")
         }
         if (typeof secondSemesterGrade !== "string") {
             res.statusCode = 400
-            throw new Error("Password precisa ser uma string")
+            throw new Error("Nota precisa ser uma string")
         }
         if (typeof teacherName !== "string") {
             res.statusCode = 400
-            throw new Error("Password precisa ser uma string")
+            throw new Error("Nome professor precisa ser uma string")
         }
         if (typeof roomNumber !== "string") {
             res.statusCode = 400
-            throw new Error("Password precisa ser uma string")
+            throw new Error("Sala precisa ser uma string")
         }
 
         const validateIdInDatabase = await db("users").where({ id: id })
